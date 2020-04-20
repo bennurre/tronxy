@@ -1,0 +1,48 @@
+télécharger et installer Arduino : https://www.arduino.cc/en/main/software
+
+
+télécharger Sanguino-Master dans mon github :https://github.com/bennurre/tronxy
+decompresser et copier le repertoire dans : Lauszus-Sanguino-4aa3893 dans Arduino/hardware
+
+lancer arduino et verifier dans Outils:Type de carte >> Sanguino
+
+selectionner dans Outils: Processeur >> ATmega1284 16Mhz
+
+télécharger dans mon gitHub et dézipper dans le bureau : Repetier_ben_v2.3
+
+Lancer repetier.ino
+
+Lancer la Verification sous arduino
+
+Prêt à téléverser le programme dans l'imprimante...
+
+Changer le cavalier de la carte mère de l'imprimante:
+gauche pour upload, droite pour imprimer ;-) 
+
+Brancher le Pc et l'imprimante en USB...
+
+Sélectionner le port USB dans Arduino/Outils
+
+Lancer le Téléversement sous Arduino
+
+Téléversement terminé!
+
+Le fichier configuration.h présent dans mon ZIP repetier est celui réglé pour ma machine.
+C'est le meme que celui dans mon github. Vous pouvez modifier votre configuration.h vous meme 
+en vous aidant de ce lien:
+https://www.repetier.com/firmware/v091/index.php
+
+ATTENTION, si lors de la mise à jour du firmware, le téléchargement bloque
+et que l'écran d'imprimante n'affiche que 2 lignes de briques, il est BRICKED !
+Voir ma video pour se sortir de là! il faut avoir un arduino UNO sous la main!
+
+DERNIERE précision, si vous changer le fichier configuration.h, il faut faire sur l'imprimante
+aprés flashage et redémarrage, un STOCK to EEPROM.
+Même après flashage, l'eeprom garde en hard la config, il faut la recharger
+pour que le nouveau fichier configuration.h soit chargé et pris en compte par
+l'eeprom.
+
+
+
+
+
